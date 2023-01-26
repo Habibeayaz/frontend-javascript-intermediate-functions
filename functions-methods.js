@@ -10,6 +10,49 @@
 // getEmailDomain("a.wiersma@outlook.com") geeft outlook.com
 
 
+function getEmailDomain(emailAddress,domainName) {
+}
+
+const emailAdress1 = "n.eeken@novi-education.nl"
+const domainName1 = emailAdress1.split('@').pop()
+console.log(domainName1);
+const emailAdress2 = "t.mellink@novi.nl"
+const domainName2 = emailAdress2.split('@').pop()
+console.log(domainName2);
+const emailAdress3 = "a.wiersma@outlook.com"
+const domainName3 = emailAdress3.split('@').pop()
+console.log(domainName3);
+
+/*function getEmailDomain(email) {
+    const domain = email;
+}
+console.log(domain);
+
+const findIndex = domain.substring(domain.indexOf("@") + 1);
+return findIndex
+
+const final = getEmailDomain("a.wiersma@outlook.com");
+console.log(final);*/
+
+
+/*const result1 = getEmailDomain("n.eeken@novi-education.nl", "novi-education");
+getEmailDomain.split("@")[1]*/
+
+/*email.Substring(0, email.IndexOf("@"));
+email.substring()
+console.log(getEmailDomain);*/
+
+
+/*function getEmailDomain(emailAddress,domainName) {
+    return domainName;
+}
+const result1 = getEmailDomain("n.eeken@novi-education.nl", "novi-education");
+console.log(result1);
+const result2 = getEmailDomain ("t.mellink@novi.nl", "novi.nl");
+console.log(result2)
+const result3 = getEmailDomain ("a.wiersma@outlook.com", "outlook.com");
+console.log(result3);*/
+
 
 
 /* Opdracht  2 */
