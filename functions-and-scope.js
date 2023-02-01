@@ -93,17 +93,30 @@ console.log(count);*/
 // cumLaude([6, 4, 5]) geeft 0
 // cumLaude([8, 9, 4, 6, 10]) geeft 3
 
-/*const ggrades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
-let target = 8;
+const grades1 = [6, 4, 5];
+let target1 = 8;
 
-let counter = 0;
-for (grade of ggrades) {
-    if (grade >= target) {
-        counter++;
+let counter1 = 0;
+for (grade of grades1) {
+    if (grade >= target1) {
+        counter1++;
     }
 };
 
-console.log(counter);*/
+console.log(counter1);
+
+const grades2 = [8, 9, 4, 6, 10];
+let target2 = 8;
+
+let counter2 = 0;
+for (grade of grades2) {
+    if (grade >= target2) {
+        counter2++;
+    }
+};
+
+console.log(counter2);
+
 
 
 /* Opdracht  2: Gemiddeld cijfer */
