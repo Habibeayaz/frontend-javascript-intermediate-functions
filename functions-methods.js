@@ -135,3 +135,46 @@ console.log(newstr4);
 // checkEmailValidity("n.eekenanovi.nl") geeft false - want geen @
 // checkEmailValidity("n.eeken@novinl.") geeft false - want de punt mag niet als laatst
 // checkEmailValidity("tessmellink@novi,nl") geeft false - want er staat een komma in
+
+/// ik krijg in deze functie de semicolon niet goed. Tot else werkt de code wel maar daarna niet. Ik heb de laatste gedeelte van de code hierdoor uitgecomment///
+function checkEmailValidity(mail) {
+}
+
+const mail1 = "n.eeken@novi.nl";
+{
+    if (mail1.includes("@")) ;
+}
+console.log("True");
+
+const mail2 = "tessmellink@novi.nl";
+{
+    if (mail2.includes("@")) ;
+}
+console.log("True");
+
+const mail3 = "n.eekenanovi.nl";
+{
+    if (mail3.includes("@")) ;
+}
+console.log("True");
+
+const mail4 = "n.eeken@novinl.";
+{
+    if (mail4.lastIndexOf(".", 14)) ;
+}
+console.log("True");
+
+    const mail5 = "tessmellink@novi,nl";
+{
+    if (mail5.includes(",")) ;
+    {
+        console.log("True");
+
+    }
+}
+
+/*
+} else {
+    console.log("false");
+}
+*/
