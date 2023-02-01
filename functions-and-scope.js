@@ -16,13 +16,6 @@
 
 // ---- Verwachte uitkomst: 6
 
-/*count = 0;
-for (let i = 0; i<grades.target; i++);
-let target = 8;
-    if (grades >= target);
-count ++;
-console.log(count);*/
-
 const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 let target = 8;
 
@@ -32,56 +25,7 @@ for (number of grades) {
         counter++;
     }
 }
-
 console.log(counter);
-
-/*const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
-let countNumber = (grades) => {
-    return grades.filter(n => n == 8).length
-}
-console.log(countNumber);*/
-
-/*
-count = 0;
-for ( let i = 0; i<grades.length; i++ ) count += i in grades;
-if (grades.count >= 8);
-console.log(count);
-*/
-
-/*
-const getallen = [2, 4, 5];
-if (getallen.forEach(8, 14));
-    console.log(getallen);
-*/
-
-
-
-
-/*
-/!*function getCountOf(grades) {
-    var count = 0;
-    for (let i = 0; i < grades.length; i++) { // Could also use marks.forEach() here
-        if (getGrade(grades[i]) === 8) {
-            count++;
-        }
-    }*!/
-    return count;
-}
-*/
-
-/*const getallen = [9, 8, 5];
-
-getallen.forEach(getal => {
-    console.log(getal);
-})*/
-
-/*const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
-let count = 0;
-for(let i = 0; i < grades.length; ++i){
-    if(grades[i] == 2)
-        count++;
-}
-console.log(count);*/
 
 /*  1b: Omschrijven tot een herbruikbare functie   */
 // Schrijf een functie genaamd cumLaude, die een array van cijfers verwacht (zoals grades) en het aantal Cum laude studenten teruggeeft. Gebruik hiervoor jouw antwoord van 1a.
@@ -101,7 +45,7 @@ for (grade of grades1) {
     if (grade >= target1) {
         counter1++;
     }
-};
+}
 
 console.log(counter1);
 
@@ -113,7 +57,7 @@ for (grade of grades2) {
     if (grade >= target2) {
         counter2++;
     }
-};
+}
 
 console.log(counter2);
 
