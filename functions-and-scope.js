@@ -2,7 +2,7 @@
 // maar ook een manier moeten vinden om hetgeen dat je verzamelt ergens te bundelen. Op deze manier zul je ontdekken hoe je omgaat met scope. Pak vooral het hoofdstuk op EdHub over for-loops er nog eens bij!
 // Tip: je mag hier geen ingebouwde object methoden gebruiken, dus daar hoef je niet naar te kijken.
 
-const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
+/*const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];*/
 
 /* Opdracht  1: Cum Laude */
 
@@ -16,12 +16,72 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 
 // ---- Verwachte uitkomst: 6
 
+/*count = 0;
+for (let i = 0; i<grades.target; i++);
+let target = 8;
+    if (grades >= target);
+count ++;
+console.log(count);*/
+
+const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
+let target = 8;
+
+let counter = 0;
+for (number of grades) {
+    if (number >= target) {
+        counter++;
+    }
+}
+
+console.log(counter);
+
+/*const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
+let countNumber = (grades) => {
+    return grades.filter(n => n == 8).length
+}
+console.log(countNumber);*/
+
+/*
 count = 0;
 for ( let i = 0; i<grades.length; i++ ) count += i in grades;
-    if (grades[i] >= 8);
+if (grades.count >= 8);
 console.log(count);
+*/
+
+/*
+const getallen = [2, 4, 5];
+if (getallen.forEach(8, 14));
+    console.log(getallen);
+*/
 
 
+
+
+/*
+/!*function getCountOf(grades) {
+    var count = 0;
+    for (let i = 0; i < grades.length; i++) { // Could also use marks.forEach() here
+        if (getGrade(grades[i]) === 8) {
+            count++;
+        }
+    }*!/
+    return count;
+}
+*/
+
+/*const getallen = [9, 8, 5];
+
+getallen.forEach(getal => {
+    console.log(getal);
+})*/
+
+/*const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
+let count = 0;
+for(let i = 0; i < grades.length; ++i){
+    if(grades[i] == 2)
+        count++;
+}
+console.log(count);*/
 
 /*  1b: Omschrijven tot een herbruikbare functie   */
 // Schrijf een functie genaamd cumLaude, die een array van cijfers verwacht (zoals grades) en het aantal Cum laude studenten teruggeeft. Gebruik hiervoor jouw antwoord van 1a.
@@ -33,7 +93,17 @@ console.log(count);
 // cumLaude([6, 4, 5]) geeft 0
 // cumLaude([8, 9, 4, 6, 10]) geeft 3
 
+/*const ggrades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
+let target = 8;
 
+let counter = 0;
+for (grade of ggrades) {
+    if (grade >= target) {
+        counter++;
+    }
+};
+
+console.log(counter);*/
 
 
 /* Opdracht  2: Gemiddeld cijfer */
