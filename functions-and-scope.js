@@ -131,6 +131,13 @@ console.log(counter2);
 
 // ---- Verwachte uitkomst: 6.642857142857143
 
+const grades4 = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6]
+let total = 0;
+for(let i = 0; i < grades4.length; i++) {
+    total += grades4[i];
+}
+let avg = total / grades4.length;
+console.log(avg)
 
 /* 2b: Omschrijven tot een herbruikbare functie */
 // Schrijf een functie genaamd averageGrade, die een array van cijfers verwacht (zoals grades) en het gemiddelde cijfer teruggeeft. Gebruik hiervoor jouw antwoord van 2a.
@@ -142,12 +149,27 @@ console.log(counter2);
 // averageGrade([6, 4, 5]) geeft xxxx
 // averageGrade([8, 9, 4, 6, 10]) geeft xxxx
 
+const grades5 = [6, 4, 5]
+let total5 = 0;
+for(let i = 0; i < grades5.length; i++) {
+    total5 += grades5[i];
+}
+let avg5 = total5 / grades5.length;
+console.log(avg5)
+
+const grades6 = [8, 9, 4, 6, 10]
+let total6 = 0;
+for(let i = 0; i < grades6.length; i++) {
+    total6 += grades6[i];
+}
+let avg6 = total6 / grades6.length;
+console.log(avg6)
 
 /* 2c: Afronden op twee decimalen */
 // Zorg ervoor dat het gemiddelde cijfer dat wordt teruggegeven uit de functie netjes wordt afgerond op twee decimalen.
 // Tip: Google is your best friend!
 
-
+console.log(Math.floor(avg * 100) / 100);
 
 
 /* Bonusopdracht: hoogste cijfer */
