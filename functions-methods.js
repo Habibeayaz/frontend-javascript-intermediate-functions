@@ -23,26 +23,7 @@ const emailAdress3 = "a.wiersma@outlook.com"
 const domainName3 = emailAdress3.split('@').pop()
 console.log(domainName3);
 
-/*function getEmailDomain(email) {
-    const domain = email;
-}
-console.log(domain);
-
-const findIndex = domain.substring(domain.indexOf("@") + 1);
-return findIndex
-
-const final = getEmailDomain("a.wiersma@outlook.com");
-console.log(final);*/
-
-
-/*const result1 = getEmailDomain("n.eeken@novi-education.nl", "novi-education");
-getEmailDomain.split("@")[1]*/
-
-/*email.Substring(0, email.IndexOf("@"));
-email.substring()
-console.log(getEmailDomain);*/
-
-
+/// Andere manier zonder string ///
 /*function getEmailDomain(emailAddress,domainName) {
     return domainName;
 }
@@ -87,19 +68,24 @@ emailaddress4.replace(emailaddress4, profession4);
 console.log(profession4);
 
 /// Andere manier ///
-/*function typeOfEmail(email, myFunction) {
-}*/
+function typeOfEmail2(email, myFunction) {
+}
 const email1 = "n.eeken@novi-education.nl";
-/*if (email1 === "n.eeken@novi-education.nl") {
-}*/
 const myFunction1 = email1.replace(email1, "Student");
 console.log(myFunction1);
 
-const email = "t.mellink@novi.nl";
-/*if (email === "t.mellink@novi.nl") {
-}*/
-const myFunction = email.replace(email, "Medewerker");
-console.log(myFunction);
+const email2 = "t.mellink@novi.nl";
+const myFunction2 = email2.replace(email2, "Medewerker");
+console.log(myFunction2);
+
+const email3 = "novi.nlaapjesk@outlook.com";
+const myFunction3 = email3.replace(email3, "Extern");
+console.log(myFunction3);
+
+const email4 = "a.wiersma@outlook.com";
+const myFunction4 = email4.replace(email4, "Extern");
+console.log(myFunction4);
+
 
 
 /// Andere manier ///
@@ -121,8 +107,6 @@ console.log(newstr4);
 
 
 
-
-
 /* Opdracht  3 */
 // Schrijf een functie genaamd checkEmailValidity, die een emailadres verwacht en checkt of het emailadres valide is. De functie returned true of false, afhankelijk van de uitkomst.
 // Een emailadres is valide wanneer:
@@ -136,7 +120,7 @@ console.log(newstr4);
 // checkEmailValidity("n.eeken@novinl.") geeft false - want de punt mag niet als laatst
 // checkEmailValidity("tessmellink@novi,nl") geeft false - want er staat een komma in
 
-/// ik krijg in deze functie de semicolon niet goed. Tot else werkt de code wel maar daarna niet. Ik heb de laatste gedeelte van de code hierdoor uitgecomment///
+/// ik krijg in deze functie de semicolon niet goed. Tot else werkt de code wel maar daarna niet. Ik heb de laatste gedeelte van de code hierdoor uitgecommented///
 function checkEmailValidity(mail) {
 }
 
@@ -173,8 +157,6 @@ console.log("True");
     }
 }
 
-/*
-} else {
-    console.log("false");
-}
-*/
+/*} else {
+    console.log("False");
+}*/
