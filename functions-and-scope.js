@@ -2,7 +2,7 @@
 // maar ook een manier moeten vinden om hetgeen dat je verzamelt ergens te bundelen. Op deze manier zul je ontdekken hoe je omgaat met scope. Pak vooral het hoofdstuk op EdHub over for-loops er nog eens bij!
 // Tip: je mag hier geen ingebouwde object methoden gebruiken, dus daar hoef je niet naar te kijken.
 
-const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
+/*const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];*/
 
 /* Opdracht  1: Cum Laude */
 
@@ -16,6 +16,16 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 
 // ---- Verwachte uitkomst: 6
 
+const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
+let target = 8;
+
+let counter = 0;
+for (number of grades) {
+    if (number >= target) {
+        counter++;
+    }
+}
+console.log(counter);
 
 /*  1b: Omschrijven tot een herbruikbare functie   */
 // Schrijf een functie genaamd cumLaude, die een array van cijfers verwacht (zoals grades) en het aantal Cum laude studenten teruggeeft. Gebruik hiervoor jouw antwoord van 1a.
@@ -27,6 +37,29 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 // cumLaude([6, 4, 5]) geeft 0
 // cumLaude([8, 9, 4, 6, 10]) geeft 3
 
+const grades1 = [6, 4, 5];
+let target1 = 8;
+
+let counter1 = 0;
+for (grade of grades1) {
+    if (grade >= target1) {
+        counter1++;
+    }
+}
+
+console.log(counter1);
+
+const grades2 = [8, 9, 4, 6, 10];
+let target2 = 8;
+
+let counter2 = 0;
+for (grade of grades2) {
+    if (grade >= target2) {
+        counter2++;
+    }
+}
+
+console.log(counter2);
 
 
 
@@ -42,6 +75,13 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 
 // ---- Verwachte uitkomst: 6.642857142857143
 
+const grades4 = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6]
+let total = 0;
+for(let i = 0; i < grades4.length; i++) {
+    total += grades4[i];
+}
+let avg = total / grades4.length;
+console.log(avg)
 
 /* 2b: Omschrijven tot een herbruikbare functie */
 // Schrijf een functie genaamd averageGrade, die een array van cijfers verwacht (zoals grades) en het gemiddelde cijfer teruggeeft. Gebruik hiervoor jouw antwoord van 2a.
@@ -53,12 +93,27 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 // averageGrade([6, 4, 5]) geeft xxxx
 // averageGrade([8, 9, 4, 6, 10]) geeft xxxx
 
+const grades5 = [6, 4, 5]
+let total5 = 0;
+for(let i = 0; i < grades5.length; i++) {
+    total5 += grades5[i];
+}
+let avg5 = total5 / grades5.length;
+console.log(avg5)
+
+const grades6 = [8, 9, 4, 6, 10]
+let total6 = 0;
+for(let i = 0; i < grades6.length; i++) {
+    total6 += grades6[i];
+}
+let avg6 = total6 / grades6.length;
+console.log(avg6)
 
 /* 2c: Afronden op twee decimalen */
 // Zorg ervoor dat het gemiddelde cijfer dat wordt teruggegeven uit de functie netjes wordt afgerond op twee decimalen.
 // Tip: Google is your best friend!
 
-
+console.log(Math.floor(avg * 100) / 100);
 
 
 /* Bonusopdracht: hoogste cijfer */
