@@ -150,7 +150,7 @@ console.log("True");
 
     const mail5 = "tessmellink@novi,nl";
 {
-    if (mail5.includes(",")) ;
+    if (mail5.includes(","));
     {
         console.log("True");
 
